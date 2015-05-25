@@ -1,0 +1,137 @@
+html,
+body
+{
+  padding: 0;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* hide horizontal scrollbars, since we use the vertical ones to scroll to the right */
+body
+{
+        pointer-events: none;
+  overflow-x: hidden;
+}
+
+h1
+{
+  font-size: 20px;
+  font-weight: normal;
+  color: #2e6e80;
+}
+
+/**
+  * important: keep position fixed, you can however use top:0 instead of bottom:0
+  * if you want to make it stick to the top of the browser
+  */
+.scroll
+{
+    pointer-events: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+/**
+  * z-index ordering of the different layers, do this for your layers,
+  * also assign absolute width (to prevent issues if the script gets executed before the images get loaded)
+  */
+.horizon
+{
+    pointer-events: none;
+    z-index: 1000;
+  width: 3000px;
+    margin-bottom: 650px;
+  
+}
+
+.middle
+{
+    pointer-events: none;
+    z-index: 100;
+    width: 4000px;
+    position: fixed;
+
+}
+
+.front {
+    
+    pointer-events: none;
+    z-index: 500;
+    width: 5000px;
+}
+
+.shop {
+    
+    pointer-events: none;
+    z-index: 1500;
+    width: 6000px;
+    margin-left: 1000px;
+    margin-bottom: 40px;
+    position: fixed;
+    
+}
+
+.bio {
+    pointer-events: none;
+    z-index: 2500;
+    width: 6000px;
+    position: fixed;
+}
+
+#shopfront {
+     pointer-events: none;
+    z-index: 1500;
+    width: 6000px;
+    margin-left: 1015px;
+    margin-bottom: 40px;
+    position: fixed;
+}
+
+.doginfo {
+    pointer-events: none; 
+    width: 150px;
+    height: 150px; 
+    background-color: black; 
+    z-index: 1000;
+    margin-left: 20px;
+    margin-bottom: 280px;
+    position: fixed;
+}
+
+.catinfo {
+    pointer-events: none; 
+    width: 150px;
+    height: 150px; 
+    background-color: black; 
+    z-index: 1000;
+    margin-left: 260px;
+    margin-bottom: 80px;
+    position: fixed;
+    display: none;
+}
+
+.steveninfo {
+    pointer-events: none; 
+    width: 150px;
+    height: 150px; 
+    background-color: black; 
+    z-index: 1000;
+    margin-left: 480px;
+    margin-bottom: 350px;
+    position: fixed;
+}
+
+#test {
+    position: fixed;
+    cursor: pointer;
+    pointer-events: none;
+    width: 300px;
+    height: 300px; 
+    background: black;
+    z-index: 50000;
+}
+
+
+
+
