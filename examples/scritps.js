@@ -24,12 +24,13 @@
     }(jQuery));
 
 
-            $( "#bio" ).hover(
-              function() {
-                $( this ).addClass( "#hover" );
-              }, function() {
-                $( this ).removeClass( "#hover" );
-              }
-            );
-
-            $( ".bio" ).off( "mouseenter mouseleave" );
+            $(document).ready(function(){
+                $("#hide").click(function(){
+                    $("p").hide();
+                });
+                $("#show").click(function(){
+                    $("p").show();
+                });
+                
+                });
+                

@@ -71,13 +71,6 @@ h1
     
 }
 
-.bio {
-    pointer-events: none;
-    z-index: 2500;
-    width: 6000px;
-    position: fixed;
-}
-
 #shopfront {
     pointer-events: none;
     z-index: 1500;
@@ -101,23 +94,10 @@ h1
     width: 150px;
     height: 150px; 
     background-color: white; 
-    z-index: 1000;
+    z-index: 1500;
     margin-left: 20px;
     margin-bottom: 280px;
     position: fixed;
-}
-
-.hover {
-    pointer-events: none; 
-    width: 150px;
-    height: 150px; 
-    background-color: white; 
-    opacity: 0.5;
-    z-index: 1000;
-    margin-left: 260px;
-    margin-bottom: 80px;
-    position: fixed;
-
 }
 
 .steveninfo {
@@ -126,7 +106,7 @@ h1
     height: 150px; 
     background-color: white; 
     opacity: 0.5;
-    z-index: 1000;
+    z-index: 1500;
     margin-left: 480px;
     margin-bottom: 350px;
     position: fixed;
@@ -149,5 +129,28 @@ h1
     width: 1000px;
     margin-left: 580px;
     margin-bottom: 40px;    
+
+}
+
+.hide{
+    pointer-events: none;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    opacity: 0.6px;
+    z-index: 2000;
+    position: fixed;
+
+}
+
+
+.show{
+    z-index: 2000;
+    pointer-events: none;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    opacity: 0.6px;
+    position: fixed;
 
 }
