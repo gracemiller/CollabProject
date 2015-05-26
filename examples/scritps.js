@@ -7,26 +7,29 @@
             onScroll: function(percent) {   //optional: callback function that will be called when the user scrolls down, useful for animating other things on the page
                 console.log(percent);
                 
-                if(percent > 0.125) {
+                if(percent > 0.0534) {
                     $("#shopfront").fadeOut(1000);
                 }
                 
-                if(percent > 0.125) {
-                    $("#p").fadeIn(1000);
+                if(percent > 0.7973) {
+                    $("#shopfront2").fadeOut(1000);
                 }
                 
+                $("#bio").hover(function(){
+                $("#steveninfo").fadeIn(1000);
+            });
+         
             }
         });
     }(jQuery));
-        
-        $(document).ready(function() {
-            $("body").click(function(){
-                console.log("sada");
-            });
-            
 
-            $("#shopfront").on("click", function(){
-                $(this).fadeOut(3000);
-            });
-                
-        });
+
+            $( "#bio" ).hover(
+              function() {
+                $( this ).addClass( "#hover" );
+              }, function() {
+                $( this ).removeClass( "#hover" );
+              }
+            );
+
+            $( ".bio" ).off( "mouseenter mouseleave" );
